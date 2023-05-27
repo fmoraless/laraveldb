@@ -1,0 +1,34 @@
+[
+    {
+        "title": "The Shawshank Redemption",
+        "slug": "the-shawshank-redemption",
+        "excerpt": "Post excerpt",
+        "description": "Post description",
+        "is_published": true,
+        "min_to_read": 2
+    },
+    {
+        "title": "The second post",
+        "slug": "the-second-post",
+        "excerpt": "Post excerpt",
+        "description": "Post description",
+        "is_published": true,
+        "min_to_read": 2
+    },
+    {
+        "title": "The third post",
+        "slug": "the-third-post",
+        "excerpt": "Post excerpt",
+        "description": "Post description",
+        "is_published": true,
+        "min_to_read": 2
+    },
+    {
+        "title": "The fourth post",
+        "slug": "the-fourth-post",
+        "excerpt": "Post excerpt",
+        "description": "Post description",
+        "is_published": true,
+        "min_to_read": 2
+    }
+]
