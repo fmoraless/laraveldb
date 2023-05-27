@@ -45,6 +45,7 @@ class PostSeeder extends Seeder
 
         $posts->each(function ($post) {
             Post::create([
+                'user_id' => $post->user_id,
                 'title' => $post->title,
                 'slug' => $post->slug,
                  'excerpt' => $post->excerpt,
