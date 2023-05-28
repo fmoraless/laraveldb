@@ -13,10 +13,10 @@ class PostsController extends Controller
     public function index()
     {
         $posts = DB::table('posts')
-            ->select('is_published');
-        $added = $posts->addSelect('title')->get();
-        dd($added);
+            ->find(1000);
+        dd($posts->description);
     }
+
 
     /**
      * Show the form for creating a new resource.
