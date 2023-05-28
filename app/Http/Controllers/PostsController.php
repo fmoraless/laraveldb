@@ -13,8 +13,9 @@ class PostsController extends Controller
     public function index()
     {
         $posts = DB::table('posts')
-            ->find(1000);
-        dd($posts->description);
+            ->pluck('title');
+
+        dd($posts);
     }
 
 
