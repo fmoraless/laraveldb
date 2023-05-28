@@ -13,7 +13,17 @@ class PostsController extends Controller
     public function index()
     {
         $posts = DB::table('posts')
-            ->pluck('title');
+            ->upsert([
+               [
+                   'user_id' => 1,
+                   'title' => 'X Inserted through the db facade 4',
+                   'slug' => 'inserted-through-the-db-facade-4',
+                   'excerpt' => 'This is the excerpt 4',
+                   'description' => 'This is the description 4',
+                   'is_published' => true,
+                   'min_to_read' => 4,
+               ]
+            ], ['title', 'slug']);
 
         dd($posts);
     }
